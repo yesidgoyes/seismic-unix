@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Seismic-unix : Funciones básicas del Seismic Unix para realizar un modelamiento sismico (forward modelling) " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Seismic-unix</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/yesidgoyes/seismic-unix">View on GitHub</a>
+
+          <h1 id="project_title">Seismic-unix</h1>
+          <h2 id="project_tagline">Funciones básicas del Seismic Unix para realizar un modelamiento sismico (forward modelling) </h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/yesidgoyes/seismic-unix/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/yesidgoyes/seismic-unix/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="primero-instalaci%C3%B3n" class="anchor" href="#primero-instalaci%C3%B3n"><span class="octicon octicon-link"></span></a>Primero: Instalación.</h3>
+
+<p>Para una correcta instalacion debemos instalar un compilador y preferiblemente (no obligatoriamente) actualizar el sistema.</p>
+
+<blockquote>
+<p>En caso de usar ubuntu debe cambiar <code>yum</code> por <code>apt-get</code> </p>
+</blockquote>
+
+<pre><code>$ sudo yum install gcc
+$ sudo yum update
+</code></pre>
+
+<p>si ya tienes el compilador instalado y el sistema actualizado, podemos seguir:</p>
+
+<h3>
+<a name="descargar-archivos-de-instalaci%C3%B3n" class="anchor" href="#descargar-archivos-de-instalaci%C3%B3n"><span class="octicon octicon-link"></span></a>Descargar archivos de instalación</h3>
+
+<p>Estos se pueden descargar desde la página del CWP/MINES  o usando la siguiente línea de comando:</p>
+
+<pre><code>wget ftp://ftp.cwp.mines.edu/pub/cwpcodes/cwp_su_all_43R1.tgz
+</code></pre>
+
+<p>Como observamos, el archivo tiene extensión *.tgz, la debemos cambiar por *.tar.gz, se puede hacer modificando el nombre con F2 y escribiendolo manualmente o usando la siguiente línea de comando:</p>
+
+<pre><code>$ mv cwp_su_all_43R1.tgz cwp_su_all_43R1.tar.gz
+</code></pre>
+
+<h3>
+<a name="compilar-e-instalar-el-seismix-unx" class="anchor" href="#compilar-e-instalar-el-seismix-unx"><span class="octicon octicon-link"></span></a>Compilar e instalar el Seismix Un*x</h3>
+
+<p>Ahora, solo resta compilar los archivos necesarios, para simplificar esto se ha creado un Script que realiza automaticamente evitando errores comúnes de compilación.
+Ademas un video explicativo muestra la forma correcta de usarlo.</p>
+
+<p><a href="http://www.youtube.com/redirect?q=https%3A%2F%2Fdrive.google.com%2Ffolderview%3Fid%3D0B2kFCLSvDPMjTTRscHJXMDlnNE0%26usp%3Dsharing&amp;session_token=922iaqcey3bOiR0R9HvqfCYUo9V8MTM5Mjc1MDMxMUAxMzkyNjYzOTEx">Link para Script</a></p>
+
+<p><a href="http://www.youtube.com/watch?v=7aUPbkeRNFs">Link para Video</a></p>
+
+<p>Al finalizar la instalación se debe escribir la siguiente línea de comando:</p>
+
+<p><code>source ~/.bashrc</code></p>
+
+<h3>
+<a name="errores-com%C3%BAnes" class="anchor" href="#errores-com%C3%BAnes"><span class="octicon octicon-link"></span></a>Errores Comúnes</h3>
+
+<blockquote>
+<p>Instalaciones fallidas deben ser borradas: simplemente eliminar la carpeta de instalación.
+Verificar que se hayan realizado todos los pasos anteriores.
+Verificar que el nombre del archivo comprimido coincida con lo explicado anteriormente.</p>
+
+<p>Instalaciones fallidas: deben borrar el $CWPROOT, para esto deben escribir :</p>
+</blockquote>
+
+<pre><code>$ sudo gedit ~/.bashrc
+</code></pre>
+
+<p>y borrar la linea :  <code>export CWPROOT=</code></p>
+
+<h3>
+<a name="contacte-por-ayuda" class="anchor" href="#contacte-por-ayuda"><span class="octicon octicon-link"></span></a>Contacte por ayuda</h3>
+
+<p>Este post fue creado por <a href="https://github.com/yesidgoyes" class="user-mention">@yesidgoyes</a> con material propio.
+correo: -goyes.yesid@gmail.com-</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Seismic-unix maintained by <a href="https://github.com/yesidgoyes">yesidgoyes</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
